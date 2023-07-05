@@ -1,7 +1,14 @@
 package com.example.issuetracker.model;
 import jakarta.persistence.*;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
 
 @Entity
+
+
+
+
 @Table(name="issues")
 public class Issue {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,4 +49,6 @@ public class Issue {
     }
 
 
+    public void setStatus(String started) {
+    }
 }
