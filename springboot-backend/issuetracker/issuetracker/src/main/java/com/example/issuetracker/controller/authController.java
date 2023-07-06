@@ -101,5 +101,5 @@ public class authController {
         return ResponseEntity.ok("Password reset successful");
     }
 
-    // Helper methods for token generation and expiration checking
+
 }

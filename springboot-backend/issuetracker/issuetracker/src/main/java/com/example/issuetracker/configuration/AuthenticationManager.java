@@ -14,7 +14,7 @@ import org.springframework.security.core.AuthenticationException;
 public class AuthenticationManager extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        // Configure authentication provider(s) for AuthenticationManager
+
         auth.authenticationProvider(customAuthenticationProvider());
     }
 

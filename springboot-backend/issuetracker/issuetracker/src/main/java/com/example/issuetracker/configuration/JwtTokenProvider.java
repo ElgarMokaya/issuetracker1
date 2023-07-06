@@ -12,5 +12,4 @@ import io.jsonwebtoken.SignatureAlgorithm;
 public class JwtTokenProvider {
     public String generateToken(Authentication authentication) {
     }
-    // Implementation of JwtTokenProvider methods
 }
