@@ -1,6 +1,7 @@
 package com.example.issuetracker.controller;
 
-
+import com.example.issuetracker.configuration.AuthenticationManager;
+import com.example.issuetracker.configuration.JwtTokenProvider;
 import com.example.issuetracker.repository.UserRepository;
 import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,9 @@ import com.example.issuetracker.model.LoginRequest;
 import com.example.issuetracker.model.ResetPasswordRequest;
 import com.example.issuetracker.model.ForgotPasswordRequest;
 import com.example.issuetracker.model.AuthResponse;
+
+
+
 
 @RestController
 @RequestMapping("/api/auth")
